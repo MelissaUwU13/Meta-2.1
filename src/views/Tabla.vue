@@ -25,9 +25,11 @@ export default {
 
 <style scoped>
 table{
-justify-content: center;
+margin: 0 auto; /* centra horizontalmente */
+padding: 10px;
 background-color:#F5B0DC;
 }
+
 th, td{
 width: 250px;
 padding: 5px;

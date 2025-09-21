@@ -1,6 +1,9 @@
  <template>
   <div class="tarjeta">
-    <img :src="imagen" alt="Imagen" width="200">
+    <img :src="imagen" alt="Imagen" class="card-img">
+    <br>
+    <h5>{{ titulo }}</h5>
+    <br>
     <p>{{ texto }}</p>
   </div>
 </template>
@@ -10,6 +13,7 @@ export default {
   name: "Card",
   props: {
     imagen: String,
+    titulo: String,
     texto: String
   }
 }
@@ -21,5 +25,11 @@ export default {
   padding: 10px;
   margin: 10px;
   text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 </style>
